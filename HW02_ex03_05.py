@@ -34,10 +34,28 @@
 ################################################################################
 # Write your functions below:
 # Body
+top = "+" + 4 * " -" + " "
+middle = "|" + 9 * " "
 
 
+def box(c):
+	print top * c + "+"
+	print middle * c + "|"
+	print middle * c + "|"
+	print middle * c + "|"
+	print middle * c + "|"
 
+def two_by_two():
+	box(2)
+	box(2)
+	print top * 2 + "+"
 
+def four_by_four():
+	box(4)
+	box(4)
+	box(4)
+	box(4)
+	print top * 4 + "+"
 
 
 
@@ -54,7 +72,9 @@ def main():
     two_by_two()
     four_by_four()
     """
-    print("Hello World!")
+    
+    two_by_two()
+    four_by_four()
     
 
 
